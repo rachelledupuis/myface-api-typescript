@@ -18,7 +18,7 @@ Once you have run all of those, we can simply start the app with
 npm start
 ```
 
-This should start the app, and we can see it by going to http://localhost:3001 in the browser.
+This should start the app, and we can see it by going to no in the browser.
 
 To update the application, just change any of the code, save it, and the app should automatically update.
 Just refresh the page to see the impact of your changes.
