@@ -18,11 +18,11 @@ export function UserDetailPage(props) {
     return (
         <div>
             <div>{user !== undefined ? <User user={user}/> : <p>Loading user details...</p>}</div>
-            <h2>{user.name}'s Posts</h2>
-            <div>{user !== undefined ? <PostList postlist={user.posts}/> : <p>Loading user's posts...</p>}</div>
-            <h2>{user.name}'s Likes</h2>
+            <div>{user !== undefined ? <h2>{user.name}'s Posts</h2> : <p>Loading user details...</p>}</div>
+            <div>{user !== undefined ? <PostList postlist={user.posts}/> : <p>Loading user's likes...</p>}</div>
+            <div>{user !== undefined ? <h2>{user.name}'s Likes</h2> : <p>Loading user details...</p>}</div>
             <div>{user !== undefined ? <PostList postlist={user.likes}/> : <p>Loading user's likes...</p>}</div>
-            <h2>{user.name}'s Dislikes</h2>
+            <div>{user !== undefined ? <h2>{user.name}'s Dislikes</h2> : <p>Loading user details...</p>}</div>
             <div>{user !== undefined ? <PostList postlist={user.dislikes}/> : <p>Loading user's dislikes...</p>}</div>
         </div>
     )
