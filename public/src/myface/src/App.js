@@ -6,7 +6,7 @@ import { UserListPage } from './Components/Users/userListPage/UserListPage';
 function App() {
   return (
     <div className="App">
-        <UserDetailPage id='58' />
+        <UserDetailPage id='58'/>
     </div>
   );
 }
