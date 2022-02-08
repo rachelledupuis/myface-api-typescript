@@ -14,7 +14,7 @@ export function PostListPage() {
     );
 
     return (
-        postList !== undefined ? <PostList postlist={postList}/> : <p>('Loading...')</p>
+        postList !== undefined ? <PostList postlist={postList}/> : <p>Loading...</p>
     )
     
 }
