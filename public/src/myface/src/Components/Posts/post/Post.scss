@@ -1,0 +1,24 @@
+@import './../../constants.scss';
+
+.post {
+    display: grid;
+    background-color: $darkbackground;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 50% 1fr 2fr; 
+    gap: 0px 0px;  
+    width: 100vw;
+}
+
+.image {
+    grid-template-areas: 1 / 1 / 2 / 2;
+    width: 100%;
+    height: 100%;
+}
+
+.user-info{
+    grid-template-areas: 2 / 1 / 3 / 2;
+}
+
+.message {
+    grid-template-areas: 3 / 1 / 4 / 2;
+}

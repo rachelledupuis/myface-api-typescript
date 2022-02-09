@@ -1,15 +1,16 @@
 import React from 'react'
+import './Post.scss';
 
 export function Post( {post} ) {
     return (
-        <div>
-            <img src={post.imageUrl} />
+        <div className='post'>
+            <img className='image' src={post.imageUrl} />
             {
             post.postedBy !== undefined
-                ? <p>Posted by {post.postedBy.name} on {post.createdAt}</p>
-                : <p>{post.createdAt}</p>
+                ? <p className='user-info'>Posted by {post.postedBy.name} on {post.createdAt}</p>
+                : <p className='user-info'>{post.createdAt}</p>
             }
-            <p>{post.message}</p>
+            <p className='message'>{post.message}</p>
         </div>
     )
 }

@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import { PostListPage } from './Components/Posts/postListPage/PostListPage';
 import { UserDetailPage } from './Components/Users/userDetailPage/UserDetailPage';
 import { UserListPage } from './Components/Users/userListPage/UserListPage';
@@ -11,7 +11,8 @@ function App() {
       <Routes>
         <Route path='posts' element={<PostListPage/>}/>
         <Route path='users' element={<UserListPage/>}/>
-        <Route path='users/:userid' element={<UserDetailPage/>}/>
+        <Route path ='users/:userid' element={<UserDetailPage/>}/>
+        {/* <Route exact ='users?page=:pageNumber' element={<UserListPage/>}/> */}
         <Route path="*" element={<p>There's nothing here!</p>}/>
       </Routes>
       </div>
