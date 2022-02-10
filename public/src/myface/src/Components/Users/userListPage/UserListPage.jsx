@@ -35,7 +35,7 @@ export function UserListPage() {
 
     let userPage;
 
-    if (userPage !== undefined) {
+    if (userList !== undefined) {
         userPage = 
         <>
            {nextPrevLinks}
