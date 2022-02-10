@@ -4,9 +4,9 @@
     display: grid;
     background-color: $darkbackground;
     grid-template-columns: 1fr; 
-    grid-template-rows: 50% 1fr 2fr; 
-    gap: 0px 0px;  
-    width: 100vw;
+    grid-template-rows: 50% 1fr 2fr;  
+    width: 100%;
+    margin-bottom: 24px;
 }
 
 .image {

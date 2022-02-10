@@ -11,8 +11,7 @@ function App() {
       <Routes>
         <Route path='posts' element={<PostListPage/>}/>
         <Route path='users' element={<UserListPage/>}/>
-        <Route path ='users/:userid' element={<UserDetailPage/>}/>
-        {/* <Route exact ='users?page=:pageNumber' element={<UserListPage/>}/> */}
+        <Route path='users/:userid' element={<UserDetailPage/>}/>
         <Route path="*" element={<p>There's nothing here!</p>}/>
       </Routes>
       </div>

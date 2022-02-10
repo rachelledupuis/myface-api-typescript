@@ -4,7 +4,6 @@ import { useParams } from "react-router-dom";
 
 export function UserListPage() {
     let { pageNumber } = useParams();
-    console.log(pageNumber)
 
     const[userList, setUserList] = useState()
 
