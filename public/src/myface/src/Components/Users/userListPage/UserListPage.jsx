@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { UserList } from "../userList/UserList";
-import { useParams } from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
 
 export function UserListPage() {
-    let { pageNumber } = useParams();
-
     const[userList, setUserList] = useState()
+    const [searchParams] = useSearchParams();
+    const pageNumber = searchParams.get('page');
 
     useEffect(
         function() {
-            fetch(`http://localhost:3001/users?page=${pageNumber}`)
+            const url = `http://localhost:3001/users?${pageNumber ? `page=${pageNumber}` : ""}&pageSize=10`;
+            fetch(url)
                 .then(response => response.json())
                 .then(userListJson => setUserList(userListJson.results));
         },
